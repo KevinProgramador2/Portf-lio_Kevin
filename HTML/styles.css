@@ -24,6 +24,7 @@ body {
   border-radius: 123px;
   font: bold 2em "Century Gothic";
   cursor: pointer;
+  font-size: 1.5em; /* Novo tamanho (ajuste conforme necessário) */
 }
 
 .caixa::before,
