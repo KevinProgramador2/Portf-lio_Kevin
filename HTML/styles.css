@@ -125,11 +125,47 @@ h1 {
 main {
   text-align: center;
   color: #ffffff;
-  margin-top: 20px;
-  padding: 20px;
+  margin-top: 100px;
+  padding: 10px;
   font-family: "Century Gothic", sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   background-color: #303530;
   border-radius: 30px;
+  content: "";
+  z-index: -1;
+  width: calc(100 + 30px);
+  height: calc(5% + 30px);
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #ffeb00,
+    #00ff00,
+    #00ffff,
+    #0000ff,
+    #ff00ff,
+    #ff0000,
+    #ff7300,
+    #ffeb00,
+    #00ff00
+  );
+  background-size: 300%;
+
+  animation: mainRgb 2s linear infinite;
+}
+@keyframes mainRgb {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+main p {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #161515;
+  border-radius: 25px;
 }
