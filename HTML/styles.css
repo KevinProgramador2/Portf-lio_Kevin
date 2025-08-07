@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  justify-content: center;
 }
 
 body {
@@ -9,22 +10,28 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #000000;
+  background-color: #161515;
 }
 
 .caixa {
+  margin-top: 59px;
+  display: flex;
   position: relative;
   width: 400px;
   height: 400px;
   color: #ffffff;
-  background: #000000;
+  background: #161515;
   display: flex;
-  justify-content: center;
   align-items: center;
   border-radius: 123px;
   font: bold 2em "Century Gothic";
-  cursor: pointer;
-  font-size: 1.5em; /* Novo tamanho (ajuste conforme necessário) */
+  font-size: 1.1em; /* Novo tamanho (ajuste conforme necessário) */
+}
+
+.caixa.imagem {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .caixa::before,
@@ -64,4 +71,65 @@ body {
   100% {
     background-position: 300%;
   }
+}
+
+header {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #303530;
+  border-radius: 30px;
+  font-family: "Century Gothic", sans-serif;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.imagem {
+  width: 100%;
+  height: 100%;
+  border-radius: 123px;
+  object-fit: cover;
+  transition: transform 2s ease;
+}
+
+.imagem:hover {
+  transform: scale(0.905);
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  background-color: purple;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 20px;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #303530;
+  border-radius: 30px;
 }
